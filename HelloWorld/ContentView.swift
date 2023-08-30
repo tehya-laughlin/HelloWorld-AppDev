@@ -10,12 +10,319 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack{
+                Circle()
+                    .frame(width: 200.0, height: 200.0)
+            }
+           
+            HStack{
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                
+            }
+            
+            
+            HStack{
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                
+            }
+            
+            
+            HStack{
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                
+            }
+            
+            
+            HStack{
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                
+            }
+            
+            
+            
+            
+            HStack{
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                
+            }
+            
+            
+            HStack{
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                ZStack{
+                    Rectangle()
+                        .fill(/*@START_MENU_TOKEN@*/Color(hue: 0.999, saturation: 0.332, brightness: 0.96)/*@END_MENU_TOKEN@*/)
+                    Text("Orange")
+                        .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    
+                }
+                
+            }
+            
+            
+            
+            
+            
+            
         }
-        .padding()
+        
     }
 }
 

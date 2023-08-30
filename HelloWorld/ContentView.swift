@@ -10,58 +10,64 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
        
-        VStack{
-            QuadBlocksText()
-            QuadBlocks()
-            QuadBlocks()
-            QuadBlocks()
+        ZStack{
+            Circle()
+                .fill(Color.pink)
+            Image("AIPortrait").clipShape(Circle()).opacity(0.70)
+                
+            VStack{
+                Text("Hello")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    
+                QuadBlocksOther()
+                QuadBlocks()
+                Text("World")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
+            }
         }
-        .frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/)
-        
     }
 }
 
 struct QuadBlocks: View {
     var body: some View {
         HStack{
-            Rectangle()
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+            ZStack{
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
+            }
           
-            RoundedRectangle(cornerRadius: 9)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+            RoundedRectangle(cornerRadius: 15)
+                .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
 
-            RoundedRectangle(cornerRadius:15)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+            RoundedRectangle(cornerRadius:20)
+                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
             
             RoundedRectangle(cornerRadius:25)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
             
-            RoundedRectangle(cornerRadius:35)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+            RoundedRectangle(cornerRadius:30)
+                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
          
         }
         .padding(.horizontal)
+        .frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
         
     }
 }
 
-struct QuadBlocksText: View {
+struct QuadBlocksOther: View {
     var body: some View {
         HStack{
-            ZStack{
-                Rectangle()
+            Rectangle()
                     .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
-                Text("Hello")
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-            }
-           
-            ZStack{
-                RoundedRectangle(cornerRadius: 9)
+               
+            RoundedRectangle(cornerRadius: 9)
                     .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
-                Text("World")
-                    .foregroundColor(.white)
-            }
-         
+                
             RoundedRectangle(cornerRadius:15)
                     .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
             
@@ -73,6 +79,7 @@ struct QuadBlocksText: View {
          
         }
         .padding(.horizontal)
+        .frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
         
     }
 }

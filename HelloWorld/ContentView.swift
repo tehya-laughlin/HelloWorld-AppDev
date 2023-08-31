@@ -36,20 +36,20 @@ struct QuadBlocks: View {
     var body: some View {
         HStack{
             ZStack{
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 35)
                     .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
             }
           
-            RoundedRectangle(cornerRadius: 15)
+            RoundedRectangle(cornerRadius: 25)
                 .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
 
-            RoundedRectangle(cornerRadius:20)
+            RoundedRectangle(cornerRadius:15)
                     .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
             
-            RoundedRectangle(cornerRadius:25)
+            RoundedRectangle(cornerRadius:5)
                     .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
             
-            RoundedRectangle(cornerRadius:30)
+            RoundedRectangle(cornerRadius:0)
                     .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
          
         }

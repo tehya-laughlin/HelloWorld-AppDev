@@ -37,24 +37,24 @@ struct QuadBlocks: View {
         HStack{
             ZStack{
                 RoundedRectangle(cornerRadius: 35)
-                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
+                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
             }
           
             RoundedRectangle(cornerRadius: 25)
-                .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
+                .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
 
             RoundedRectangle(cornerRadius:15)
-                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
+                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
             
             RoundedRectangle(cornerRadius:5)
-                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
+                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
             
             RoundedRectangle(cornerRadius:0)
-                    .fill(/*@START_MENU_TOKEN@*/Color(red: 0.059, green: 0.006, blue: 0.177)/*@END_MENU_TOKEN@*/)
+                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
          
         }
         .padding(.horizontal)
-        .frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
+        .frame(width: 400.0, height: 70.0)
         
     }
 }
@@ -63,23 +63,23 @@ struct QuadBlocksOther: View {
     var body: some View {
         HStack{
             Rectangle()
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                    .fill(Color.blue)
                
             RoundedRectangle(cornerRadius: 9)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                    .fill(Color.blue)
                 
             RoundedRectangle(cornerRadius:15)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                    .fill(Color.blue)
             
             RoundedRectangle(cornerRadius:25)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                    .fill(Color.blue)
             
             RoundedRectangle(cornerRadius:35)
-                    .fill(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+                    .fill(Color.blue)
          
         }
         .padding(.horizontal)
-        .frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
+        .frame(width: 400.0, height: 70.0)
         
     }
 }

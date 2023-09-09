@@ -12,22 +12,36 @@ struct ContentView: View {
     @State var togColor: Bool = false
     @State var accentColor1: Color = Color.blue
     @State var accentColor2: Color = Color(red: 0.059, green: 0.006, blue: 0.177)
-    
+    @State var name: String = ""
     
     var body: some View {
         VStack{
             
-            Toggle("Switch", isOn: $togColor)
-                .padding(.horizontal, 150.0)
-                .tint(Color.blue)
+            VStack{
+                Toggle("Switch Color", isOn: $togColor)
+                    .frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
+                    .tint(Color.blue)
+                
+                TextField("Name", text:$name)
+                    .padding(.leading, 8.0)
+                    .frame(width: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/40.0/*@END_MENU_TOKEN@*/)
+                    .border(accentColor2, width: 2)
+            }
+            .padding(.bottom, 6.0)
             
             ZStack{
+             
                 Circle()
-                    .fill(Color.pink)
+                        .fill(Color.pink)
                 Image("AIPortrait").clipShape(Circle()).opacity(0.70)
-                
-                
+    
                 VStack{
+                    
+                    Text("Hello")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                        .foregroundColor(Color.white)
+                    
                     if (togColor) {
                         QuadBlocks(color: $accentColor1)
                         QuadBlocksOther(color: $accentColor2)
@@ -35,6 +49,13 @@ struct ContentView: View {
                         QuadBlocks(color: $accentColor2)
                         QuadBlocksOther(color: $accentColor1)
                     }
+                    
+                    Text("\(name)")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                        .foregroundColor(Color.white)
+                    
+                    
                 }
             }
         }

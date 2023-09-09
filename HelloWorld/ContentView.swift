@@ -19,6 +19,7 @@ struct ContentView: View {
             
             Toggle("Switch", isOn: $togColor)
                 .padding(.horizontal, 150.0)
+                .tint(Color.blue)
             
             ZStack{
                 Circle()

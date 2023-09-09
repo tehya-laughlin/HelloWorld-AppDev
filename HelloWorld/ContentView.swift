@@ -8,49 +8,60 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var togColor: Bool = false
+    @State var accentColor1: Color = Color.blue
+    @State var accentColor2: Color = Color(red: 0.059, green: 0.006, blue: 0.177)
+    
+    
     var body: some View {
-       
-        ZStack{
-            Circle()
-                .fill(Color.pink)
-            Image("AIPortrait").clipShape(Circle()).opacity(0.70)
+        VStack{
+            
+            Toggle("Switch", isOn: $togColor)
+                .padding(.horizontal, 150.0)
+            
+            ZStack{
+                Circle()
+                    .fill(Color.pink)
+                Image("AIPortrait").clipShape(Circle()).opacity(0.70)
                 
-            VStack{
-                Text("Hello")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    
-                QuadBlocksOther()
-                QuadBlocks()
-                Text("World")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(red: 1.0, green: 1.0, blue: 1.0))
+                
+                VStack{
+                    if (togColor) {
+                        QuadBlocks(color: $accentColor1)
+                        QuadBlocksOther(color: $accentColor2)
+                    } else {
+                        QuadBlocks(color: $accentColor2)
+                        QuadBlocksOther(color: $accentColor1)
+                    }
+                }
             }
         }
     }
 }
 
 struct QuadBlocks: View {
+    
+    @Binding var color: Color
+    
     var body: some View {
         HStack{
             ZStack{
                 RoundedRectangle(cornerRadius: 35)
-                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
+                    .fill(color)
             }
           
             RoundedRectangle(cornerRadius: 25)
-                .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
+                .fill(color)
 
             RoundedRectangle(cornerRadius:15)
-                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
+                    .fill(color)
             
             RoundedRectangle(cornerRadius:5)
-                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
+                    .fill(color)
             
             RoundedRectangle(cornerRadius:0)
-                    .fill(Color(red: 0.059, green: 0.006, blue: 0.177))
+                    .fill(color)
          
         }
         .padding(.horizontal)
@@ -60,22 +71,25 @@ struct QuadBlocks: View {
 }
 
 struct QuadBlocksOther: View {
+    
+    @Binding var color: Color
+    
     var body: some View {
         HStack{
             Rectangle()
-                    .fill(Color.blue)
+                    .fill(color)
                
             RoundedRectangle(cornerRadius: 9)
-                    .fill(Color.blue)
+                    .fill(color)
                 
             RoundedRectangle(cornerRadius:15)
-                    .fill(Color.blue)
+                    .fill(color)
             
             RoundedRectangle(cornerRadius:25)
-                    .fill(Color.blue)
+                    .fill(color)
             
             RoundedRectangle(cornerRadius:35)
-                    .fill(Color.blue)
+                    .fill(color)
          
         }
         .padding(.horizontal)

@@ -19,12 +19,12 @@ struct ContentView: View {
             
             VStack{
                 Toggle("Switch Color", isOn: $togColor)
-                    .frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
+                    .frame(width: 170.0, height: 30.0)
                     .tint(Color.blue)
                 
                 TextField("Name", text:$name)
                     .padding(.leading, 8.0)
-                    .frame(width: /*@START_MENU_TOKEN@*/150.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/40.0/*@END_MENU_TOKEN@*/)
+                    .frame(width: 150.0, height: 40.0)
                     .border(accentColor2, width: 2)
             }
             .padding(.bottom, 6.0)
